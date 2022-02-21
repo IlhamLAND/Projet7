@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+          <head>
+                 <title> Crédit Application</title>
+                 <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+                 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+                 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+                 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+                 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+          </head>
+
+
+          <body>
+          <h1 class="text-center"> <p style="color :red; "> Simulation de la solvabilité du client </p> </h1>
+          <h2 class="text-center"> <p style="color :blue; "> Notre seuil est de 50% </p>  </h2>
+          <h3 class="text-center"> Les identifiants clients se trouvent dans la table Identifiants</h3>
+             <form class "p-3 text-center" action='/' method="post" enctype="multipart/form-data">
+                 <input class="form-control" type="number" name="Identifiant" >
+                 <input class="btn btn-primary btn-block btn-large" type="submit" value="Prediction du Score">
+             </form>
+
+           {% if prediction %}
+                  <p class="text-center">
+                      Le statut de votre demande est :  {{prediction}}
+                  </p>
+
+           {% endif %}
+
+           {% if valeur %}
+                  <p class="text-center">
+                      Le pourcentage de score du client est : {{valeur}} %
+                  </p>
+
+           {% endif %}
+<!--
+            <form action="/result" method="post" >
+            <dl>
+                 <input class="form-control" type="number" name="Identifiant" >
+                 <input class="btn btn-primary btn-block btn-large" type="submit" value="Interpretabilité de notre score">
+            </dl>
+            </form>
+
+
+    {% if user_image %}
+          src = data:image/png;base64,{dataToTake}
+
+         <img src="{{ user_image }}" alt="User Image">
+    {% endif %}
+-->
+          </body>
+
+
+
+
+
+</html>
