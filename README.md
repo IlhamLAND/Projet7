@@ -19,3 +19,4 @@ Prêt à dépenser décide donc de développer un dashboard interactif pour que 
 * Lien vers l'API : https://creditprediction.herokuapp.com/credit/196543
 * Lien vers le Dashboard: https://dshprediction.herokuapp.com/
 
+
