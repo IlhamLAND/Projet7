@@ -15,6 +15,7 @@ Prêt à dépenser décide donc de développer un dashboard interactif pour que 
 5. Déployement de l'API et du Dashboard avec Heroku
 
 # Livrables : 
+* Lien Github vers le répertoire du projet : https://github.com/IlhamLAND/Projet7
 * Lien vers le notebook de modélisation : https://github.com/IlhamLAND/Projet7/blob/main/P7_01_Code/P7_Mod%C3%A9lisation.ipynb
 * Lien vers l'API : https://creditprediction.herokuapp.com/credit/196543
 * Lien vers le Dashboard: https://dshprediction.herokuapp.com/
